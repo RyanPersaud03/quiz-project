@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Project</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="view-scores">View high scores</div>
+    <div id="time-box">Time:</div>
+    <div class="container">
+        <!-- Start quiz screen -->
+        <div class="main">
+    <h1>Coding Quiz Challenge</h1>
+    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by seconds!</p>
+    <button id="startquiz">Start Quiz</button>
+</div>
+<!-- First question screen -->
+    <div class="test hide" >
+        <h1 id="question">Commonly used data types DO Not Include:</h1>
+        <div id="answer-buttons">
+            <button class="options-btn incorrect">1. strings</button>
+            <button id="correctone"class="options-btn">2. booleans</button>
+            <button class="options-btn incorrect">3. alerts</button>
+            <button class="options-btn incorrect">4. numbers</button>
+        </div>
+</div>
+<!-- Second Question screen -->
+     <div class="question-two hide" >
+        <h1 id="question">The condition in an if / else statement is enclosed with ___.</h1>
+        <div id="answer-buttons">
+            <button class="options-btn">1. quotes</button>
+            <button class="options-btn">2. curly brackets</button>
+            <button id="correcttwo"class="options-btn">3. parenthesis</button>
+            <button class="options-btn">4. square brackets</button>
+        </div>
+<!-- Third Question screen -->
+<div class="question-three hide" >
+    <h1 id="question">Arrays in JavaScript can be used to store ___.</h1>
+    <div id="answer-buttons">
+        <button class="options-btn">1. numbers and strings</button>
+        <button class="options-btn">2. other arrays</button>
+        <button class="options-btn">3. booleans</button>
+        <button id="correcttwo"class="options-btn">4. all of the above</button>
+    </div>
+</div> 
+<script src="./assets/script.js"></script>
+</body>
+</html>
