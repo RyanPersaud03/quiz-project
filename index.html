@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="view-scores">View high scores</div>
-    <div id="time-box">Time:</div>
+    <div id="time-box"><span id="time-left">75</span>Time:</div>
     <div class="container">
         <!-- Start quiz screen -->
         <div class="main">
@@ -20,29 +20,29 @@
     <div class="test hide" >
         <h1 id="question">Commonly used data types DO Not Include:</h1>
         <div id="answer-buttons">
-            <button class="options-btn incorrect">1. strings</button>
+            <button class="options-btn incorrectone">1. strings</button>
             <button id="correctone"class="options-btn">2. booleans</button>
-            <button class="options-btn incorrect">3. alerts</button>
-            <button class="options-btn incorrect">4. numbers</button>
+            <button class="options-btn incorrectone">3. alerts</button>
+            <button class="options-btn incorrectone">4. numbers</button>
         </div>
 </div>
 <!-- Second Question screen -->
      <div class="question-two hide" >
         <h1 id="question">The condition in an if / else statement is enclosed with ___.</h1>
         <div id="answer-buttons">
-            <button class="options-btn">1. quotes</button>
-            <button class="options-btn">2. curly brackets</button>
+            <button class="options-btn incorrecttwo">1. quotes</button>
+            <button class="options-btn incorrecttwo" >2. curly brackets</button>
             <button id="correcttwo"class="options-btn">3. parenthesis</button>
-            <button class="options-btn">4. square brackets</button>
+            <button class="options-btn incorrecttwo">4. square brackets</button>
         </div>
         </div>
 <!-- Third Question screen -->
 <div class="question-three hide" >
     <h1 id="question">Arrays in JavaScript can be used to store ___.</h1>
     <div id="answer-buttons">
-        <button class="options-btn">1. numbers and strings</button>
-        <button class="options-btn">2. other arrays</button>
-        <button class="options-btn">3. booleans</button>
+        <button class="options-btn incorrectthree">1. numbers and strings</button>
+        <button class="options-btn incorrectthree">2. other arrays</button>
+        <button class="options-btn incorrectthree">3. booleans</button>
         <button id="correctthree"class="options-btn">4. all of the above</button>
     </div>
 </div> 
@@ -50,35 +50,37 @@
 <div class="question-four hide" >
     <h1 id="question">String value must be enclosed within ___ when being assigned to variables.</h1>
     <div id="answer-buttons">
-        <button class="options-btn">1. commas</button>
+        <button class="options-btn incorrectfour">1. commas</button>
         <button id="correctfour"class="options-btn">2. curly brackets</button>
-        <button class="options-btn">3. quotes</button>
-        <button class="options-btn">4. parenthesis</button>
+        <button class="options-btn incorrectfour">3. quotes</button>
+        <button class="options-btn incorrectfour">4. parenthesis</button>
     </div>
 </div> 
 <!-- Five Question screen -->
 <div class="question-five hide" >
     <h1 id="question">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
     <div id="answer-buttons">
-        <button class="options-btn">1. JavaScript</button>
-        <button class="options-btn">2. terminal/bash</button>
+        <button class="options-btn incorrectfive">1. JavaScript</button>
+        <button class="options-btn incorrectfive">2. terminal/bash</button>
         <button id="correctfive"class="options-btn">3. for loops</button>
-        <button class="options-btn">4. console.log</button>
+        <button class="options-btn incorrectfive">4. console.log</button>
     </div>
 </div> 
 <!--High Scores Page-->
 <div class="highscores hide" >
     <h1 id="question">All Done! High Scores:</h1>
-    <p>your final score is:</p>
+    <p><span id="allhighscores"></span></p>
+    <p>your final score is:<span id="UserScore"></span></p>
+    <div id="target"></div>
     <form>
-        <label for="highscores">Enter Initials:</label>
+        <label form="highscores">Enter Initials:</label>
         <input type="text" id="initials" name="initials">
-    </for>
+    </form>
     <div id="answer-buttons">
-        <button class="options-btn submit">Submit</button>
+        <button type="submit"id="submit"class="options-btn submit">Submit</button>
         
     </div>
-</div> 
+    
 
 <script src="./assets/script.js"></script>
 </body>
